@@ -13,26 +13,26 @@ export const SectionCard = () => {
                     style={styles.image}
                 />
                 <Pressable style={styles.heartButton} >
-                  <BsHeart/>
+                  <BsHeart style={styles.heart}/>
                 </Pressable>
             </View>
 
-            <View >
-                <Text>Iconic Brazil</Text>
+            <View   style={styles.details}>
+                <Text style={styles.title}>Iconic Brazil</Text>
 
-                <Text >
+                <Text style={styles.info}>
                     8 days  *  from $659/person
                 </Text>
 
-                <View >
-                    <View >
-                        <FaRegStar/>
-                        <Text >4.6</Text>
-                        <Text >56 reviews</Text>
+                <View style={styles.bottomRow}>
+                    <View style={styles.rating}>
+                        <FaRegStar style={styles.star}/>
+                        <Text style={styles.ratingNumber}>4.6</Text>
+                        <Text style={styles.reviews}>56 reviews</Text>
                     </View>
 
-                    <Pressable >
-                        <GoArrowRight />
+                    <Pressable style={styles.arrowButton} >
+                        <GoArrowRight style={styles.arrow}/>
                     </Pressable>
                 </View>
             </View>
@@ -65,6 +65,60 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
        },
+    heart: {
+        fontSize: 20,
+        color: "#111",
+    },
+    details: {
+        paddingHorizontal: 5,
+        paddingTop: 8,
+    },
+     title: {
+        fontSize: 18,
+        fontWeight: "600",
+        color: "#171717",
+    },
+     info: {
+        fontSize: 14,
+        color: "#999999",
+        marginTop: 5,
+    },
+    bottomRow: {
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+        marginTop: 12,
+    },
+    rating: {
+        flexDirection: "row",
+        alignItems: "center",
+    },
+    star: {
+        fontSize: 21,
+        marginRight: 5,
+    },
+    ratingNumber: {
+        fontSize: 14,
+        color: "#333333",
+    },
+    reviews: {
+        fontSize: 13,
+        color: "#999999",
+        marginLeft: 10,
+    },
+    arrowButton: {
+        width: 48,
+        height: 48,
+        borderRadius: 25,
+        backgroundColor: "#17191B",
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    arrow: {
+        fontSize: 25,
+        color: "#FFFFFF",
+    },
+
 })
 
       
