@@ -1,5 +1,6 @@
 import { Hero } from "@/components/hero";
 import { Navbar } from "@/components/navbar";
+import { Section } from "@/components/section";
 import { Text, View, StyleSheet } from "react-native";
 
 export default function Index() {
@@ -9,6 +10,7 @@ export default function Index() {
 
       <Navbar />
       <Hero />
+      <Section />
     </View>
   );
 }

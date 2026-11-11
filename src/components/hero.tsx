@@ -1,4 +1,4 @@
-import { View, Text, ImageBackground, Pressable, StyleSheet } from "react-native";
+import { View,ImageBackground, Pressable, StyleSheet } from "react-native";
 import { IoChevronBackOutline } from "react-icons/io5";
 import { BsHeart } from "react-icons/bs";
 
