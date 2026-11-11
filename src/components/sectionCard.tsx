@@ -1,4 +1,4 @@
-import { View, Text,  Pressable} from "react-native";
+import { View, Text, Image, Pressable, StyleSheet,Button} from "react-native";
 import { BsHeart } from "react-icons/bs";
 import { FaRegStar } from "react-icons/fa6";
 import { GoArrowRight } from "react-icons/go";
@@ -6,9 +6,13 @@ import { GoArrowRight } from "react-icons/go";
 
 export const SectionCard = () => {
     return (
-        <View>
+        <View >
             <View>
-                <Pressable >
+                <Image
+                    source={require("../../assets/images/card image.jpg")}
+                    style={styles.image}
+                />
+                <Pressable style={styles.heartButton} >
                   <BsHeart/>
                 </Pressable>
             </View>
@@ -36,5 +40,24 @@ export const SectionCard = () => {
     );
 };
 
+
+const styles = StyleSheet.create({
+   image: {
+        width: "100%",
+        height: 185,
+        borderRadius: 20,
+    },
+    heartButton: {
+        position: "absolute",
+        top: 10,
+        right: 10,
+        width: 40,
+        height: 40,
+        borderRadius: 24,
+        backgroundColor: "white",
+        justifyContent: "center",
+        alignItems: "center",
+       },
+})
 
       
