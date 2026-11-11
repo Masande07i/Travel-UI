@@ -2,7 +2,7 @@ import { Hero } from "@/components/hero";
 import { Navbar } from "@/components/navbar";
 import { Section } from "@/components/section";
 import { UpcomingTours } from "@/components/upcoming";
-import { Text, View, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
 
 export default function Index() {
   return (

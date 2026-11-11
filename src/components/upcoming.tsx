@@ -1,5 +1,5 @@
-import { View, Text, ScrollView, StyleSheet, Pressable } from "react-native";
-import { SectionCard } from "./sectionCard";
+import { View, Text, ScrollView, StyleSheet } from "react-native";
+import {SectionCard} from "./sectionCard";
 
 export const UpcomingTours = () => {
     return (
@@ -7,10 +7,7 @@ export const UpcomingTours = () => {
             <View style={styles.header}>
                 <Text style={styles.title}>Upcoming tours</Text>
 
-                <Pressable>
-                    <Text style={styles.seeAll}>See all</Text>
-                </Pressable>
-
+                <Text style={styles.seeAll}>See all</Text>
             </View>
 
             <ScrollView
@@ -18,9 +15,23 @@ export const UpcomingTours = () => {
                 showsHorizontalScrollIndicator={false}
                 contentContainerStyle={styles.cards}
             >
-                <SectionCard />
-                <SectionCard />
-               
+                <SectionCard
+                    title="Iconic Brazil"
+                    image={require("../../assets/images/card image.jpg")}
+                    duration="8 days"
+                    price="$659"
+                    rating="4.6"
+                    reviews="56 reviews"
+                />
+
+                <SectionCard
+                    title="Amazon Rainforest Adventure"
+                    image={require("../../assets/images/card image.png")}
+                    duration="10 days"
+                    price="$1,299"
+                    rating="4.8"
+                    reviews="89 reviews"
+                />         
             </ScrollView>
         </View>
     );

@@ -1,5 +1,4 @@
-import { View, Text, Pressable, StyleSheet, Image } from "react-native";
-import { SectionCard } from "./sectionCard";
+import { View, Text, Pressable,Button, StyleSheet, Image } from "react-native";
 import { FaRegStar } from "react-icons/fa6";
 
 export const Section = () => {
@@ -9,7 +8,7 @@ export const Section = () => {
             <View style={styles.titleRow}>
                 <View>
                     <Text style={styles.title}>Rio de Janeiro</Text>
-
+      
                     <View style={styles.countryRow}>
                        <Image 
                             source={require("../../assets/images/round.png")}
