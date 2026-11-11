@@ -6,7 +6,7 @@ import { GoArrowRight } from "react-icons/go";
 
 export const SectionCard = () => {
     return (
-        <View >
+        <View style={styles.card}>
             <View>
                 <Image
                     source={require("../../assets/images/card image.jpg")}
@@ -42,6 +42,13 @@ export const SectionCard = () => {
 
 
 const styles = StyleSheet.create({
+   card: {
+        width: 290,
+        backgroundColor: "white",
+        borderRadius: 25,
+        padding: 12,
+        marginRight: 15,
+   },
    image: {
         width: "100%",
         height: 185,
