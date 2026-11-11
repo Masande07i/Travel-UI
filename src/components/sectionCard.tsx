@@ -43,7 +43,7 @@ export const SectionCard = () => {
 
 const styles = StyleSheet.create({
    card: {
-        width: 290,
+        width: 300,
         backgroundColor: "white",
         borderRadius: 25,
         padding: 12,
