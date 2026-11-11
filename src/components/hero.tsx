@@ -26,7 +26,7 @@ export const Hero = () => {
 
 const styles = StyleSheet.create({
     hero: {
-        height: 280,
+        height: 250,
         width: "100%",
         justifyContent: "flex-start",
         paddingTop: 50,

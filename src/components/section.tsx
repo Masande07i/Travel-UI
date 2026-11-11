@@ -1,4 +1,4 @@
-import { View, Text, Pressable, StyleSheet } from "react-native";
+import { View, Text, Pressable, StyleSheet, Image } from "react-native";
 import { SectionCard } from "./sectionCard";
 import { FaRegStar } from "react-icons/fa6";
 
@@ -11,7 +11,10 @@ export const Section = () => {
                     <Text style={styles.title}>Rio de Janeiro</Text>
 
                     <View style={styles.countryRow}>
-                        <Text style={styles.flag}>🇧🇷</Text>
+                       <Image 
+                            source={require("../../assets/images/round.png")}
+                            style={styles.flag}
+                        />
                         <Text style={styles.country}>Brazil</Text>
                     </View>
                 </View>
@@ -35,7 +38,7 @@ export const Section = () => {
                 <Text style={styles.readMore}>Read more</Text>
             </Pressable>
 
-             <SectionCard/>
+             {/* <SectionCard/> */}
         </View>
     );
 };
@@ -47,7 +50,7 @@ const styles= StyleSheet.create({
         borderTopRightRadius: 35,
         marginTop: -35,
         paddingHorizontal: 25,
-        paddingTop: 28,
+        paddingTop: 24,
         paddingBottom: 20,
     },
     titleRow: {
@@ -66,7 +69,8 @@ const styles= StyleSheet.create({
         marginTop: 8,
     },
     flag: {
-        fontSize: 20,
+        width: 23,
+        height: 23,
         marginRight: 8,
     },
     country: {
