@@ -1,4 +1,4 @@
-import { View, Text, Pressable,Button, StyleSheet, Image } from "react-native";
+import { View, Text, Pressable, StyleSheet, Image } from "react-native";
 import { FaRegStar } from "react-icons/fa6";
 
 export const Section = () => {

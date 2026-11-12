@@ -1,4 +1,4 @@
-import { View, Text, ScrollView, StyleSheet } from "react-native";
+import { View, Text, ScrollView, StyleSheet, Pressable } from "react-native";
 import {SectionCard} from "./sectionCard";
 
 export const UpcomingTours = () => {
@@ -6,8 +6,9 @@ export const UpcomingTours = () => {
         <View style={styles.container}>
             <View style={styles.header}>
                 <Text style={styles.title}>Upcoming tours</Text>
-
-                <Text style={styles.seeAll}>See all</Text>
+                <Pressable>
+                    <Text style={styles.seeAll}>See all</Text>
+                </Pressable>
             </View>
 
             <ScrollView
