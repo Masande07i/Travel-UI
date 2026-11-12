@@ -12,12 +12,22 @@ export const Hero = () => {
             imageStyle={styles.image}
         >
             <View style={styles.buttons}>
-                <Pressable style={styles.button}>
-                    <IoChevronBackOutline/>
+               <Pressable
+                    style={({ hovered }) => [
+                        styles.button,
+                        hovered && styles.buttonHovered,
+                    ]}
+                >
+                    <IoChevronBackOutline />
                 </Pressable>
 
-                <Pressable style={styles.button}>
-                    <BsHeart/>
+                <Pressable
+                    style={({ hovered }) => [
+                        styles.button,
+                        hovered && styles.buttonHovered,
+                    ]}
+                >
+                    <BsHeart />
                 </Pressable>
             </View>
         </ImageBackground>
@@ -26,7 +36,7 @@ export const Hero = () => {
 
 const styles = StyleSheet.create({
     hero: {
-        
+
         height: 290,
         width: "100%",
         justifyContent: "flex-start",
@@ -48,6 +58,10 @@ const styles = StyleSheet.create({
         backgroundColor: "white",
         justifyContent: "center",
         alignItems: "center",
+    },
+     buttonHovered: {
+        backgroundColor: "#E5E5E5",
+        transform: [{ scale: 0.95 }],
     },
     icon: {
         fontSize: 30,

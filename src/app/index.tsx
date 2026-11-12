@@ -7,8 +7,7 @@ export default function Index() {
   return (
     <ScrollView
       style={styles.container}
-      showsVerticalScrollIndicator={false}
-    >
+      showsVerticalScrollIndicator={false}>
       
       <Hero />
       <Section />
