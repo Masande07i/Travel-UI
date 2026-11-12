@@ -56,7 +56,7 @@ export const SectionCard = ({
 const styles = StyleSheet.create({
     card: {
         width: 290,
-        backgroundColor: "#FFFFFF",
+        backgroundColor: "#ffffffe8",
         borderRadius: 25,
         padding: 12,
         marginRight: 15,

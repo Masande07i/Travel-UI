@@ -9,7 +9,7 @@ export const Section = () => {
                 <View>
                     <Text style={styles.title}>Rio de Janeiro</Text>
       
-      
+
                     <View style={styles.countryRow}>
                        <Image 
                             source={require("../../assets/images/round.png")}
@@ -45,7 +45,7 @@ export const Section = () => {
 
 const styles= StyleSheet.create({
     container: {
-        backgroundColor: "#F8F9FA",
+        backgroundColor: "#f3f3f3",
         borderTopLeftRadius: 35,
         borderTopRightRadius: 35,
         marginTop: -35,
