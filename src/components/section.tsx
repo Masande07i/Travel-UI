@@ -9,6 +9,7 @@ export const Section = () => {
                 <View>
                     <Text style={styles.title}>Rio de Janeiro</Text>
       
+      
                     <View style={styles.countryRow}>
                        <Image 
                             source={require("../../assets/images/round.png")}
