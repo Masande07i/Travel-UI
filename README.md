@@ -50,7 +50,7 @@ You can start developing by editing the files inside the **src/app** directory. 
 
 
 ## Project Structure
-
+```
 src/
 ├── app/
 │   ├── _layout.tsx
@@ -64,7 +64,7 @@ src/
 │
 └── assets/
     └── images/
-
+```
 
 ## Tech stack
 ```
