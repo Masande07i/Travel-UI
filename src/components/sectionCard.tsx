@@ -25,8 +25,11 @@ export const SectionCard = ({
             <View>
                 <Image source={image} style={styles.image} />
 
-                <Pressable style={styles.heartButton}>
-                     <BsHeart style={styles.heart}/>
+                <Pressable style={({ hovered }) => [
+                    styles.heartButton,
+                    hovered && styles.buttonHovered,
+                ]}>
+                    <BsHeart style={styles.heart}/>
                 </Pressable>
             </View>
 
@@ -44,7 +47,10 @@ export const SectionCard = ({
                         <Text style={styles.reviews}>{reviews}</Text>
                     </View>
 
-                    <Pressable style={styles.arrowButton}>
+                    <Pressable style={({ hovered }) => [
+                        styles.arrowButton,
+                        hovered && styles.buttonHovered,
+                    ]}>
                         <GoArrowRight style={styles.arrow}/>
                     </Pressable>
                 </View>
@@ -130,5 +136,9 @@ const styles = StyleSheet.create({
     arrow: {
         fontSize: 25,
         color: "#FFFFFF",
+    },
+     buttonHovered: {
+        backgroundColor: "#E5E5E5",
+        transform: [{ scale: 0.95 }],
     },
 });
