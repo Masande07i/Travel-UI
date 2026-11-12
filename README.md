@@ -4,18 +4,20 @@
 
 <img src="https://socialify.git.ci/Masande07i/Travel-UI/image?language=1&owner=1&name=1&stargazers=1&theme=Light" alt="Travel-UI" width="640" height="320" />
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# Project description
+
+```A travel mobile UI built with React Native and Expo. The project focuses on creating a clean and responsive travel experience with reusable components, destination information, upcoming tours, and interactive buttons.```
 
 ## Get started
 
 1. Clone the repository
-
-git clone https://github.com/Masande07i/Travel-UI.git
-
+   ```
+   git clone https://github.com/Masande07i/Travel-UI.git
+   ```
 2. Open the project
-
-cd Travel-UI
-
+   ```
+   cd Travel-UI
+   ```
 3. Install dependencies
 
    ```bash
@@ -37,16 +39,7 @@ In the output, you'll find options to open the app in a
 
 You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-
-
-
-### Other setup steps
-
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
 
 ## Project Structure
@@ -78,7 +71,14 @@ src/
 
 5.React Icons
 
-6.CSS-style React Native StyleSheet```
+6.CSS-style React Native StyleSheet
+```
+
+### Other setup steps
+
+- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
+- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
+- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
 
 
 
