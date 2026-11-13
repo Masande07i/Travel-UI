@@ -1,5 +1,5 @@
 import { View, Text, Pressable, StyleSheet, Image } from "react-native";
-import { FaRegStar } from "react-icons/fa6";
+import { Ionicons } from "@expo/vector-icons";
 
 export const Section = () => {
   return (
@@ -20,7 +20,7 @@ export const Section = () => {
                 </View>
 
                 <View style={styles.rating}>
-                    <FaRegStar style={styles.star}/>
+                    <Ionicons name="star-outline" size={20} color="#171717" />
                     <Text style={styles.ratingText}>5.0</Text>
                 </View>
             </View>
@@ -114,7 +114,3 @@ const styles= StyleSheet.create({
         marginTop: 8,
     },
 })
-     
-      
-
-    

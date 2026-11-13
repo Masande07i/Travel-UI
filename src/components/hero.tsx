@@ -1,8 +1,6 @@
-import { View,ImageBackground, Pressable, StyleSheet } from "react-native";
-import { IoChevronBackOutline } from "react-icons/io5";
-import { BsHeart } from "react-icons/bs";
 
-
+import { View, ImageBackground, Pressable, StyleSheet } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 
 export const Hero = () => {
     return (
@@ -12,13 +10,13 @@ export const Hero = () => {
             imageStyle={styles.image}
         >
             <View style={styles.buttons}>
-               <Pressable
+                <Pressable
                     style={({ hovered }) => [
                         styles.button,
                         hovered && styles.buttonHovered,
                     ]}
                 >
-                    <IoChevronBackOutline />
+                    <Ionicons name="chevron-back-outline" size={24} color="#111" />
                 </Pressable>
 
                 <Pressable
@@ -27,7 +25,7 @@ export const Hero = () => {
                         hovered && styles.buttonHovered,
                     ]}
                 >
-                    <BsHeart />
+                    <Ionicons name="heart-outline" size={24} color="#111" />
                 </Pressable>
             </View>
         </ImageBackground>
@@ -36,7 +34,6 @@ export const Hero = () => {
 
 const styles = StyleSheet.create({
     hero: {
-
         height: 290,
         width: "100%",
         justifyContent: "flex-start",
@@ -59,12 +56,8 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
     },
-     buttonHovered: {
+    buttonHovered: {
         backgroundColor: "#E5E5E5",
         transform: [{ scale: 0.95 }],
-    },
-    icon: {
-        fontSize: 30,
-        color: "#111",
     },
 });

@@ -1,4 +1,4 @@
-import { Hero } from "@/components/hero";
+import{ Hero} from "@/components/hero"
 import { Section } from "@/components/section";
 import { UpcomingTours } from "@/components/upcoming";
 import { ScrollView, StyleSheet } from "react-native";

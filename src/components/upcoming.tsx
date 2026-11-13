@@ -1,5 +1,5 @@
 import { View, Text, ScrollView, StyleSheet, Pressable } from "react-native";
-import {SectionCard} from "./sectionCard";
+import {SectionCard} from "./sectionCard"
 
 export const UpcomingTours = () => {
     return (

@@ -1,7 +1,6 @@
+
 import { View, Text, Image, Pressable, StyleSheet, ImageSourcePropType } from "react-native";
-import { FaRegStar } from "react-icons/fa6";
-import { BsHeart } from "react-icons/bs";
-import { GoArrowRight } from "react-icons/go";
+import { Ionicons } from "@expo/vector-icons";
 
 interface SectionCardProps {
     title: string;
@@ -29,7 +28,7 @@ export const SectionCard = ({
                     styles.heartButton,
                     hovered && styles.buttonHovered,
                 ]}>
-                    <BsHeart style={styles.heart}/>
+                    <Ionicons name="heart-outline" size={27} color="#111111" />
                 </Pressable>
             </View>
 
@@ -42,7 +41,7 @@ export const SectionCard = ({
 
                 <View style={styles.bottomRow}>
                     <View style={styles.rating}>
-                        <FaRegStar style={styles.star} />
+                        <Ionicons name="star-outline" size={21} color="#171717" />
                         <Text style={styles.ratingNumber}>{rating}</Text>
                         <Text style={styles.reviews}>{reviews}</Text>
                     </View>
@@ -51,7 +50,7 @@ export const SectionCard = ({
                         styles.arrowButton,
                         hovered && styles.buttonHovered,
                     ]}>
-                        <GoArrowRight style={styles.arrow}/>
+                        <Ionicons name="arrow-forward" size={25} color="#FFFFFF" />
                     </Pressable>
                 </View>
             </View>
@@ -120,11 +119,11 @@ const styles = StyleSheet.create({
         fontSize: 14,
         color: "#333333",
     },
-    reviews: {
-        fontSize: 13,
-        color: "#999999",
-        marginLeft: 10,
-    },
+   reviews: {
+    fontSize: 13,
+    color: "#999999",
+    marginInlineStart: 10,
+},
     arrowButton: {
         width: 48,
         height: 48,
