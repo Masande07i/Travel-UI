@@ -1,4 +1,3 @@
-
 import { View, ImageBackground, Pressable, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -11,18 +10,20 @@ export const Hero = () => {
         >
             <View style={styles.buttons}>
                 <Pressable
-                    style={({ hovered }) => [
+                    style={({ hovered, pressed }) => [
                         styles.button,
                         hovered && styles.buttonHovered,
+                        pressed && styles.buttonPressed,
                     ]}
                 >
                     <Ionicons name="chevron-back-outline" size={24} color="#111" />
                 </Pressable>
 
                 <Pressable
-                    style={({ hovered }) => [
+                    style={({ hovered, pressed }) => [
                         styles.button,
                         hovered && styles.buttonHovered,
+                        pressed && styles.buttonPressed,
                     ]}
                 >
                     <Ionicons name="heart-outline" size={24} color="#111" />
@@ -58,6 +59,9 @@ const styles = StyleSheet.create({
     },
     buttonHovered: {
         backgroundColor: "#E5E5E5",
-        transform: [{ scale: 0.95 }],
+    },
+    buttonPressed: {
+        transform: [{ scale: 0.90 }],
+        opacity: 0.7,
     },
 });

@@ -1,4 +1,3 @@
-
 import { View, Text, Image, Pressable, StyleSheet, ImageSourcePropType } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -24,9 +23,10 @@ export const SectionCard = ({
             <View>
                 <Image source={image} style={styles.image} />
 
-                <Pressable style={({ hovered }) => [
+                <Pressable style={({ hovered, pressed }) => [
                     styles.heartButton,
                     hovered && styles.buttonHovered,
+                    pressed && styles.buttonPressed,
                 ]}>
                     <Ionicons name="heart-outline" size={27} color="#111111" />
                 </Pressable>
@@ -46,9 +46,10 @@ export const SectionCard = ({
                         <Text style={styles.reviews}>{reviews}</Text>
                     </View>
 
-                    <Pressable style={({ hovered }) => [
+                    <Pressable style={({ hovered, pressed }) => [
                         styles.arrowButton,
                         hovered && styles.buttonHovered,
+                        pressed && styles.buttonPressed,
                     ]}>
                         <Ionicons name="arrow-forward" size={25} color="#FFFFFF" />
                     </Pressable>
@@ -119,11 +120,11 @@ const styles = StyleSheet.create({
         fontSize: 14,
         color: "#333333",
     },
-   reviews: {
-    fontSize: 13,
-    color: "#999999",
-    marginInlineStart: 10,
-},
+    reviews: {
+        fontSize: 13,
+        color: "#999999",
+        marginInlineStart: 10,
+    },
     arrowButton: {
         width: 48,
         height: 48,
@@ -136,8 +137,12 @@ const styles = StyleSheet.create({
         fontSize: 25,
         color: "#FFFFFF",
     },
-     buttonHovered: {
+    buttonHovered: {
         backgroundColor: "#E5E5E5",
         transform: [{ scale: 0.95 }],
+    },
+    buttonPressed: {
+        transform: [{ scale: 0.90 }],
+        opacity: 0.7,
     },
 });
